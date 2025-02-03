@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guesser</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"  href="Style2.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+        
+    </head>
+    <body>
+        
+        <div class="Guesser">
+            <img id="currentimage" src="https://www.distefanosales.com/wp-content/uploads/2023/08/image-coming-soon-placeholder.png" class="image" alt="Current image">
+            <!-- <button class="Submit" id="Submit">Submit</button> -->
+           
+
+        </div>
+        <div id="map" style="position: absolute;   
+    width: calc(100vw - 100vh/3*4);
+    height: 100vh;
+    top:0;
+    right: 0;" ></div>
+        <div id="results" style="display:none;">
+            <p class="score" id="afterscore"></p>
+            <p class="error" id="htmlerror"></p>
+            <button class="nextimg" id="nextimage">Next</button>
+            
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="javascript.js"></script>
+    </body>
+</html>
